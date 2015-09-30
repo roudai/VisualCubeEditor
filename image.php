@@ -37,7 +37,7 @@ if($r1 != '' OR $r2 != '' OR $r3 != ''){
         //処理なし
     }else{
     $src .= "&r=";
-        if(r1 != ''){
+        if($r1 != '' AND $r1 != 0){
             switch($r1axis){
                 case rx1: $src .= "x"; break;
                 case ry1: $src .= "y"; break;
@@ -45,7 +45,7 @@ if($r1 != '' OR $r2 != '' OR $r3 != ''){
             }
             $src .= $r1;
         }
-        if(r2 != ''){
+        if($r2 != '' AND $r2 != 0){
             switch($r2axis){
                 case rx2: $src .= "x"; break;
                 case ry2: $src .= "y"; break;
@@ -53,7 +53,7 @@ if($r1 != '' OR $r2 != '' OR $r3 != ''){
             }
             $src .= $r2;
         }
-        if(r3 != ''){
+        if($r3 != '' AND $r3 != 0){
             switch($r3axis){
                 case rx3: $src .= "x"; break;
                 case ry3: $src .= "y"; break;

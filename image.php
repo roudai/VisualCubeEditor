@@ -28,7 +28,7 @@ if($view != ''){
 }
 if($stage != ''){
     $src .= "&stage=" .$stage;
-    if($stage_axis != '' AND $stage_axis == '-'){
+    if($stage_axis != '' AND $stage_axis != '-'){
         $src .= "-" .$stage_axis;
     }
 }
